@@ -7,6 +7,13 @@ const router = createRouter({
       path: '/shop',
       name: 'shop',
       component: () => import('../modules/shop/layouts/ShopLayout.vue'),
+      children: [
+        {
+          path: '',
+          name: 'home',
+          component: () => import('../modules/shop/views/HomeView.vue'),
+        },
+      ],
     },
   ],
 });
