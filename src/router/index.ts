@@ -4,7 +4,7 @@ const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
-      path: '/shop',
+      path: '/',
       name: 'shop',
       component: () => import('../modules/shop/layouts/ShopLayout.vue'),
       children: [
