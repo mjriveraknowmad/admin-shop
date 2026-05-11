@@ -10,6 +10,8 @@ Crédits:
 - SVG 'loader' https://github.com/n3r4zzurr0/svg-spinners/blob/main/svg-css/blocks-shuffle-3.svg?short_path=ca6d024
 - Componentes de creative-tim - twcomponents:
   - https://www.creative-tim.com/twcomponents/component/sopping-cart
+  - https://www.creative-tim.com/twcomponents/component/admin
+  - https://www.creative-tim.com/twcomponents/component/striped-table
 
 
 ## Recommended IDE Setup
