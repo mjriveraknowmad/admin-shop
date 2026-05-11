@@ -7,8 +7,10 @@ Crédits:
 - Curso de Vue de F. Herrera https://knowmadmood.udemy.com/course/vuejs-fh/learn/lecture/43914204
 - Tailwindcss https://tailwindcss.com/docs/installation/using-vite
 - Backend https://github.com/Klerith/nest-teslo-shop/tree/complete-backend
+- SVG 'loader' https://github.com/n3r4zzurr0/svg-spinners/blob/main/svg-css/blocks-shuffle-3.svg?short_path=ca6d024
 - Componentes de creative-tim - twcomponents:
   - https://www.creative-tim.com/twcomponents/component/sopping-cart
+
 
 ## Recommended IDE Setup
 
