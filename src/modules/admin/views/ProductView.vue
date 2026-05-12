@@ -34,11 +34,7 @@
 
       <div class="mb-4">
         <label for="description" class="form-label">Descripción</label>
-        <CustomTextArea
-          v-model="description"
-          v-bind="descriptionAttrs"
-          :error="errors.description"
-        />
+        <CustomTextArea v-model="description" v-bind="descriptionAttrs" :error="errors.description" />
       </div>
 
       <div class="flex flex-row gap-3">
@@ -57,19 +53,13 @@
         <label for="sizes" class="form-label">Tallas</label>
 
         <div class="flex">
-          <button
-            v-for="size of allSizes"
-            :key="size"
-            @click="toggleSize(size)"
-            type="button"
-            :class="[
-              'p-2 rounded w-14 mr-2 flex-1',
-              {
-                'bg-blue-500 text-white': hasSize(size),
-                'bg-blue-100': !hasSize(size),
-              },
-            ]"
-          >
+          <button v-for="size of allSizes" :key="size" @click="toggleSize(size)" type="button" :class="[
+            'p-2 rounded w-14 mr-2 flex-1',
+            {
+              'bg-blue-500 text-white': hasSize(size),
+              'bg-blue-100': !hasSize(size),
+            },
+          ]">
             {{ size }}
           </button>
         </div>
@@ -93,14 +83,7 @@
       <div class="col-span-2 my-2">
         <label for="image" class="form-label">Subir imagen</label>
 
-        <input
-          multiple
-          type="file"
-          id="image"
-          class="form-control"
-          accept="image/*"
-          @change="onFileChanged"
-        />
+        <input multiple type="file" id="image" class="form-control" accept="image/*" @change="onFileChanged" />
       </div>
 
       <div class="mb-4">
@@ -116,17 +99,14 @@
 
       <!-- Botón para guardar -->
       <div class="my-4 text-right">
-        <button
-          :disabled="isPending"
-          type="submit"
-          class="disabled:bg-gray-300 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-        >
+        <button :disabled="isPending" type="submit"
+          class="disabled:bg-gray-300 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
           Guardar
         </button>
       </div>
     </div>
   </form>
-  <!-- 
+  <!--
   <div class="grid grid-cols-2 mt-2">
     <pre class="bg-blue-200 p-2">
       {{ JSON.stringify(values, null, 2) }}
@@ -143,6 +123,8 @@
 <script src="./ProductView.ts" lang="ts"></script>
 
 <style scoped>
+@import "tailwindcss" reference;
+
 .form-label {
   @apply block text-gray-700 text-sm font-bold mb-2;
 }
